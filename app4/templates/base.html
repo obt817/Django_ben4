@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title></title>
+  </head>
+  <body>
+    {% include "_navbar.html" %}
+
+    {% block main %}
+    <p>表示されていません</p>
+    {% endblock %}
+
+
+    {% include "_footer.html" %}
+  </body>
+</html>
